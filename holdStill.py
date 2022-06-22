@@ -3,3 +3,4 @@ import libhousy
 def main(robot: libhousy.robot):
     #Here is where your recurring code will go
     print("Hello World!")
+    return libhousy.DONE
