@@ -4,8 +4,8 @@ first = True
 def main(robot: libhousy.robot):
     global first
     if first:
-        robot.rDriveEncoder.ReSet()
-        robot.lDriveEncoder.ReSet()
+        robot.rDriveEncoder.Reset()
+        robot.lDriveEncoder.Reset()
         first = False
 
     if robot.rDriveEncoder.Get() >4:
