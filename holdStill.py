@@ -8,16 +8,16 @@ def main(robot: libhousy.robot):
         robot.lDriveEncoder.Reset()
         first = False
 
-    if robot.rDriveEncoder.Get() >4:
+    if robot.rDriveEncoder.Get() > 2:
         robot.rDrive.Set(-.5)
-    elif robot.rDriveEncoder.Get() <-4:
+    elif robot.rDriveEncoder.Get() <-2:
        robot.rDrive.Set(.5) 
     else:
        robot.rDrive.Set(0)
 
-    if robot.lDriveEncoder.Get() > 4:
+    if robot.lDriveEncoder.Get() > 2:
         robot.lDrive.Set(-.5)
-    elif robot.lDriveEncoder.Get() < -4:
+    elif robot.lDriveEncoder.Get() < -2:
         robot.lDrive.Set(.5)
     else:
         robot.lDrive.Set(0)
