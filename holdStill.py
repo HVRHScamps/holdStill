@@ -3,20 +3,20 @@ import libhousy
 
 def main(robot: libhousy.robot):
     # Here is where your recurring code will go
-    if robot.lDriveEncoder.Get() >0:
-        robot.lDrive.Set(0)
+    if robot.lDriveEncoder.Get() >1:
+        robot.lDrive.Set(-0.25)
         
-    elif robot.lDriveEncoder.Get() <0:
-        robot.lDrive.Set(0)
+    elif robot.lDriveEncoder.Get() <-1:
+        robot.lDrive.Set(0.25)
         
     else: 
         robot.lDrive.Set(0)
 
-    if robot.rDriveEncoder.Get() >0:
-        robot.rDrive.Set(0)
+    if robot.rDriveEncoder.Get() >1:
+        robot.rDrive.Set(-0.25)
 
-    elif robot.rDriveEncoder.Get() <0:
-        robot.rDrive.Set(0)
+    elif robot.rDriveEncoder.Get() <-1:
+        robot.rDrive.Set(0.25)
     else:
         robot.rDrive.Set(0)
     
