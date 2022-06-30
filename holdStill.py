@@ -21,4 +21,4 @@ def main(robot: libhousy.robot):
         robot.rDrive.Set(0)
     
     # After everything is done, we tell the main program to stop us
-    return libhousy.DONE
+    #return libhousy.DONE
